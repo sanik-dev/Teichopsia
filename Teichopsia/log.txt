@@ -1,4 +1,4 @@
-Tue Aug 29 22:59:04 2023
+Tue Aug 29 23:15:02 2023
 macOS-14.0-arm64-arm-64bit
 Ren'Py 8.1.1.23060707
  
@@ -10,30 +10,32 @@ Loading error handling. took 0.02s
 Loading script. took 0.08s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-
-Full traceback:
-  File "game/script.rpy", line 4, in script
-    define Kayo = Character(character_name, color="#c8ffc8")
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2508, in execute
-    self.set()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2522, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 4, in <module>
-    define Kayo = Character(character_name, color="#c8ffc8")
-NameError: name 'character_name' is not defined
-
-While running game code:
-  File "game/script.rpy", line 4, in script
-    define Kayo = Character(character_name, color="#c8ffc8")
-  File "game/script.rpy", line 4, in <module>
-    define Kayo = Character(character_name, color="#c8ffc8")
-NameError: name 'character_name' is not defined
+Running init code. took 0.02s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to '/Users/nikithkalu/Library/RenPy/backups/Teichopsia':
+Dump and make backups. took 0.03s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.01s
 DPI scale factor: 1.000000
-Interface start. took 0.25s
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.23s
 
-Initializing gl renderer:
+Initializing gl2 renderer:
 primary display bounds: (0, 0, 1512, 982)
 swap interval: 1 frames
 Windowed mode.
@@ -41,20 +43,19 @@ Vendor: "b'Apple'"
 Renderer: b'Apple M1 Pro'
 Version: b'2.1 Metal - 86'
 Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
 Screen sizes: virtual=(1920, 1080) physical=(1410, 793) drawable=(2820, 1586)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

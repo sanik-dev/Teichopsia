@@ -2,16 +2,16 @@
 
 While running game code:
   File "game/script.rpy", line 4, in script
-    define Kayo = Character(character_name, color="#c8ffc8")
+    define Kayo = Character(mc_name, color="#c8ffc8")
   File "game/script.rpy", line 4, in <module>
-    define Kayo = Character(character_name, color="#c8ffc8")
-NameError: name 'character_name' is not defined
+    define Kayo = Character(mc_name, color="#c8ffc8")
+NameError: name 'mc_name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 4, in script
-    define Kayo = Character(character_name, color="#c8ffc8")
+    define Kayo = Character(mc_name, color="#c8ffc8")
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2508, in execute
     self.set()
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2522, in set
@@ -19,10 +19,10 @@ Full traceback:
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1146, in py_eval_bytecode
     return eval(bytecode, globals, locals)
   File "game/script.rpy", line 4, in <module>
-    define Kayo = Character(character_name, color="#c8ffc8")
-NameError: name 'character_name' is not defined
+    define Kayo = Character(mc_name, color="#c8ffc8")
+NameError: name 'mc_name' is not defined
 
 macOS-14.0-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Teichopsia 1.0
-Tue Aug 29 22:59:05 2023
+Tue Aug 29 23:08:25 2023

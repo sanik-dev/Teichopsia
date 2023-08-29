@@ -1,11 +1,11 @@
-﻿# Initialize the variable with the default name
+﻿# Initialize the name variable
 default mc_name = "Kayo"
-# Define the character using the variable
-define Kayo = Character(mc_name, color="#c8ffc8")
 
 # Todo: Load character assets and audio you dummy :3
 label start:
     # Setup
+    # Define the character
+    $ Kayo = Character(mc_name, color="#c8ffc8")
     # scene bg_dark_expanse  # Todo: Load a background image named "bg_dark_expanse"
     # with fade             # Fade-in effect for the background
 
