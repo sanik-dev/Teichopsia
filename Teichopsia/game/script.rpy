@@ -1,7 +1,7 @@
 ﻿# Initialize the variable with the default name
 default mc_name = "Kayo"
 # Define the character using the variable
-define Kayo = Character(character_name, color="#c8ffc8")
+define Kayo = Character(mc_name, color="#c8ffc8")
 
 # Todo: Load character assets and audio you dummy :3
 label start:
