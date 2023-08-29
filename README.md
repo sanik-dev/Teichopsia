@@ -1,13 +1,7 @@
 # Teichopsia
 
-What appears to be reality is distorted by subtle changes only the discerning eye can catch. The protagonist, a young high school student,
-finds herself living what seems to be an ordinary life. With every sunrise, she attends school, chats with her friends, and engages in
-everyday activities. Yet, with each passing day, minor details around her start to deform.
-At first glance, all is as it should be. A sliding door here, a classroom desk there, and the unchanging tick-tock of the school's hallway clock.
-Yet, if you're perceptive enough, you'll begin to notice minute changes. A door operating just slightly off its track, a clock's rhythm barely
-missing a beat. And as these subtle oddities pile up, our protagonist grapples with mysterious migraines and fleeting visual disturbances -
-manifestations of teichopsia.
+In a jarring shift from the mundane, the protagonist, a young high school student, wakes up in an unfamiliar, dark space, with no recollection of how she got there or what happened prior. Instead of the comforting rituals of school and friendship, she's faced with an environment that's both eerie and inexplicable. Despite the darkness, tiny elements in her surroundings start to exhibit strange distortions. A shimmering light in the distance that keeps changing position, the echo of footsteps where there should be none, and the unsettling feeling that time itself is fractured.
 
-Your role, while seemingly benign, is to guide this young student. Your decisions, while appearing ordinary, hold the power to subtly shift the
-reality around her. But tread lightly. As the protagonist's awareness grows, she begins to question the world, her friends, and even the
-existence of an external influence: You.
+At first, these oddities might seem inconsequential, but as they accumulate, so do the protagonist's mysterious migraines and fleeting visual disturbances—manifestations of teichopsia.
+
+Your role in this unsettling scenario is to guide the young student through this enigmatic world. Though your decisions may seem inconsequential at first glance, they have the power to subtly alter the very fabric of her reality. But proceed with caution. As the protagonist becomes increasingly aware of the irregularities around her, she starts to question not just her surroundings but also the existence of an external influence: You.
