@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 4, in script
-    define Kayo = Character(mc_name, color="#c8ffc8")
-  File "game/script.rpy", line 4, in <module>
-    define Kayo = Character(mc_name, color="#c8ffc8")
-NameError: name 'mc_name' is not defined
+  File "game/screens.rpy", line 12, in script
+    style default:
+  File "game/screens.rpy", line 14, in <module>
+    language gui.language
+AttributeError: 'StoreModule' object has no attribute 'language'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 4, in script
-    define Kayo = Character(mc_name, color="#c8ffc8")
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2508, in execute
-    self.set()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2522, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "game/screens.rpy", line 12, in script
+    style default:
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2991, in execute
+    self.apply()
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2974, in apply
+    value = renpy.python.py_eval(expr)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1146, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 4, in <module>
-    define Kayo = Character(mc_name, color="#c8ffc8")
-NameError: name 'mc_name' is not defined
+  File "game/screens.rpy", line 14, in <module>
+    language gui.language
+AttributeError: 'StoreModule' object has no attribute 'language'
 
 macOS-14.0-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Teichopsia 1.0
-Tue Aug 29 23:08:25 2023
+Wed Aug 30 13:23:49 2023

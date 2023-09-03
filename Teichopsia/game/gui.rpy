@@ -5,6 +5,9 @@
 ## The init offset statement causes the initialization statements in this file
 ## to run before init statements in any other file.
 init offset = -2
+init -2 python:
+    config.mouse = dict(left=[ ])
+    config.keymap['dismiss'] = [ 'K_z', 'K_x' ]
 
 ## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.
