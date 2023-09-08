@@ -14,7 +14,6 @@
 
 define config.name = _("Teichopsia")
 
-
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
@@ -207,3 +206,8 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+## The width and height of the screen.
+
+define config.screen_width = 1920
+define config.screen_height = 1080
