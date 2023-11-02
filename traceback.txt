@@ -1,30 +1,72 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 12, in script
-    style default:
-  File "game/screens.rpy", line 14, in <module>
-    language gui.language
-AttributeError: 'StoreModule' object has no attribute 'language'
+  File "game/script.rpy", line 54, in script
+    $ renpy.pause()
+  File "game/script.rpy", line 54, in <module>
+    $ renpy.pause()
+  File "game/script.rpy", line 47, in execute
+    screen dark_locker:
+  File "game/script.rpy", line 47, in execute
+    screen dark_locker:
+  File "game/script.rpy", line 48, in execute
+    imagemap:
+  File "game/script.rpy", line 50, in execute
+    hotspot (731, 0, 491, 210) action Jump("vent") sensitive not dialogue_active
+  File "game/script.rpy", line 50, in keywords
+    hotspot (731, 0, 491, 210) action Jump("vent") sensitive not dialogue_active
+  File "game/script.rpy", line 50, in <module>
+    hotspot (731, 0, 491, 210) action Jump("vent") sensitive not dialogue_active
+NameError: name 'dialogue_active' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/screens.rpy", line 12, in script
-    style default:
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2991, in execute
-    self.apply()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 2974, in apply
-    value = renpy.python.py_eval(expr)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1153, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens.rpy", line 14, in <module>
-    language gui.language
-AttributeError: 'StoreModule' object has no attribute 'language'
+  File "game/script.rpy", line 54, in script
+    $ renpy.pause()
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 54, in <module>
+    $ renpy.pause()
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 476, in visit_all
+    callback(self)
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 487, in per_interact
+    self.update()
+  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 47, in execute
+    screen dark_locker:
+  File "game/script.rpy", line 47, in execute
+    screen dark_locker:
+  File "game/script.rpy", line 48, in execute
+    imagemap:
+  File "game/script.rpy", line 50, in execute
+    hotspot (731, 0, 491, 210) action Jump("vent") sensitive not dialogue_active
+  File "game/script.rpy", line 50, in keywords
+    hotspot (731, 0, 491, 210) action Jump("vent") sensitive not dialogue_active
+  File "game/script.rpy", line 50, in <module>
+    hotspot (731, 0, 491, 210) action Jump("vent") sensitive not dialogue_active
+NameError: name 'dialogue_active' is not defined
 
-macOS-14.0-arm64-arm-64bit arm64
+Windows-10-10.0.23565 AMD64
 Ren'Py 8.1.1.23060707
 Teichopsia 1.0
-Wed Aug 30 13:23:49 2023
+Thu Nov  2 23:56:53 2023

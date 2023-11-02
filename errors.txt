@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 140: style property background appears twice.
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
-              ^
+File "game/script.rpy", line 73: elif clause expects a non-empty block.
+    elif c_vent > 2:
+                    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Oct 27 12:51:04 2023
+Fri Nov  3 00:06:00 2023
