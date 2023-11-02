@@ -18,7 +18,7 @@ label start:
 
     scene dark_expanse_blur # Second of bg transition; blured haloing
     with fade
-    
+
     # Kayo speaks
     Kayo "Wh…Where am I?"
     scene dark_expanse # Third of bg transition; fade in from blur
@@ -29,12 +29,23 @@ label start:
     "This is just like waking from a six hour nap, head fuzzy, confused, and I really need some water."
     scene dark_locker # Fourth of bg transition; fade into locker
     with dissolve
-    
+
     "In fact, I have no idea how I got here at all."
     "The last thing I remember is going to class, but even that feels like an eternity ago."
     "Maybe I should find a way out of here first."
 
-
     #------------------------------Locker Escape Scene------------------------------# 
-    
+
+    show screen dark_locker
+
+screen dark_locker:
+    imagemap:
+        ground "dark_locker.jpg" 
+        hover "dark_locker_hover.jpg"  # Make sure to have a hover version or just use the same image if there's no difference
+        hotspot (731, 0, 491, 210) action Jump("vent_clicked")
+
+label vent_clicked:
+    "You check out the vent"
+    "It seems very.. venty..."
+
     return

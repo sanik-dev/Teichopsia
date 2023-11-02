@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 140: style property background appears twice.
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
-              ^
+File "game/script.rpy", line 40: expected statement.
+    imagemap:
+            ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Oct 27 12:51:04 2023
+Thu Nov  2 17:25:39 2023
