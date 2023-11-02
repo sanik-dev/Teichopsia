@@ -3,6 +3,9 @@ default mc_name = "Kayo"
 
 # Todo: Load character assets and audio you dummy :3
 label start:
+
+    #------------------------------Prologue------------------------------#
+
     # Setup
     # Define the character
     $ Kayo = Character(mc_name, color="#c8ffc8")
@@ -31,4 +34,7 @@ label start:
     "The last thing I remember is going to class, but even that feels like an eternity ago."
     "Maybe I should find a way out of here first."
 
+
+    #------------------------------Locker Escape Scene------------------------------# 
+    
     return
