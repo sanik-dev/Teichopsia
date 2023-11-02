@@ -1,5 +1,10 @@
-﻿# Initialize the name variable
+﻿# Initializing the name variable
 default mc_name = "Kayo"
+
+# Initializing counter for Imagemaps
+default window_active = False
+default c_vent = 0
+
 
 # Todo: Load character assets and audio you dummy :3
 label start:
@@ -7,7 +12,6 @@ label start:
     #------------------------------Prologue------------------------------#
 
     # Setup
-    # Define the character
     $ Kayo = Character(mc_name, color="#c8ffc8")
     scene dark # First of bg transition; fade in from black
     with fade
@@ -34,18 +38,42 @@ label start:
     "The last thing I remember is going to class, but even that feels like an eternity ago."
     "Maybe I should find a way out of here first."
 
+    window hide
+    jump locker
+
     #------------------------------Locker Escape Scene------------------------------# 
 
-    show screen dark_locker
+    # Background and Imagemaps assigned to the locker scene
+    screen dark_locker:
+        imagemap:
+            ground "dark_locker.jpg" 
+            hotspot (731, 0, 491, 210) action Jump("vent") sensitive not window_active
 
-screen dark_locker:
-    imagemap:
-        ground "dark_locker.jpg" 
-        hover "dark_locker_hover.jpg"  # Make sure to have a hover version or just use the same image if there's no difference
-        hotspot (731, 0, 491, 210) action Jump("vent_clicked")
+    label locker:
+        show screen dark_locker
+        $ renpy.pause()
+        return
+    
+    label vent:
+        # Restrict textbox to imagemap counter limit
+        if c_vent < 2:
+            # show the dialogue box again
+            $ window_active = True
+            window show
 
-label vent_clicked:
-    "You check out the vent"
-    "It seems very.. venty..."
+            # vent clicked counter
+            $ c_vent += 1
 
-    return
+            if c_vent == 1:
+                "There are three long thin holes, but its too dark outside to see anything."
+            elif c_vent == 2:
+                "I might not be able to see anything, but I can certainly smell a concerning amount of chemicals in the air."
+                "If its this strong inside this locker what is it even like outside?"
+
+            window hide
+
+            # Delay to avoid double clicks
+            $ window_active = False
+            $ renpy.pause(0.5, hard=True)
+
+            jump locker
