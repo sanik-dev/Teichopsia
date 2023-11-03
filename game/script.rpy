@@ -45,13 +45,9 @@ label start:
 
     # Background and Imagemaps assigned to the locker scene
     screen dark_locker:
-        # Knees imagebutton
-        imagebutton:
-            idle "dark_locker_knees.png" 
-            hover "dark_locker_knees.png"
-            action Jump("vent") sensitive not window_active
-            xpos 0
-            ypos 0
+        imagemap:
+            ground "dark_locker.jpg" 
+            hotspot (731, 0, 491, 210) action Jump("vent") sensitive not window_active
 
     label locker:
         show screen dark_locker
