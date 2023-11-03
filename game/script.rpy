@@ -4,6 +4,7 @@ default mc_name = "Kayo"
 # Initializing counter for Imagemaps
 default window_active = False
 default c_vent = 0
+default c_knees = 0
 
 
 # Todo: Load character assets and audio you dummy :3
@@ -46,14 +47,17 @@ label start:
     # Background and Imagemaps assigned to the locker scene
     screen dark_locker:
         imagemap:
-            ground "dark_locker.jpg" 
+            ground "dark_locker.png" 
             hotspot (731, 0, 491, 210) action Jump("vent") sensitive not window_active
+            hotspot (642, 670, 646, 363) action Jump('knees') sensitive not window_active
+        
 
     label locker:
         show screen dark_locker
         $ renpy.pause()
         return
     
+    #---------------------Vent Decision Tree---------------------#
     label vent:
         # Restrict textbox to imagemap counter limit
         if c_vent < 2:
@@ -77,3 +81,26 @@ label start:
             $ renpy.pause(0.5, hard=True)
 
             jump locker
+    
+    #---------------------Knees Decision Tree---------------------#
+    label knees:
+    if c_knees == 0:
+        # show the dialogue box again
+        $ window_active = True
+
+        "No wonder my legs hurt so much."
+        "That's definitely a bruise... Probably a scrape too. I should disinfect that, huh..."
+
+        # knee clicked counter
+        $ c_knees += 1
+
+        window hide
+
+        # Delay to avoid double clicks
+        $ window_active = False
+        $ renpy.pause(0.5, hard=True)
+
+    jump locker
+
+
+        
