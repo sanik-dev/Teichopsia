@@ -6,6 +6,7 @@ default window_active = False
 default c_vent = 0
 default c_knees = 0
 default c_door = 0
+default c_broom = 0
 
 # Initialising Switches
 default touched_door = False
@@ -54,6 +55,7 @@ label start:
             hotspot (731, 0, 491, 210) action Jump("vent") sensitive not window_active
             hotspot (642, 670, 646, 363) action Jump('knees') sensitive not window_active
             hotspot (618, 245, 686, 221) action Jump('door') sensitive not window_active
+            hotspot (413, 123, 145, 619) action Jump ('broom') sensitive not window_active
 
     label locker:
         show screen dark_locker
@@ -68,19 +70,44 @@ label start:
             window show
 
             "The door is locked, but I can't see a keyhole anywhere."
-            "I guess I'll have to find another way out."
+            "Pushing on it reveals a small gap in the bottom right corner, but it's too dark to see anything through it."
 
             # door clicked counter
             $ c_door += 1
             # door has been touched check
-            $ door_touched = True
+            $ touched_door = True
             window hide
 
             # Delay to avoid double clicks
             $ window_active = False
             $ renpy.pause(0.5, hard=True)
 
-            jump locker 
+            jump locker
+
+    #---------------------Broom Decision Tree---------------------#
+    label broom:
+    if c_broom < 2:
+        # show the dialogue box again
+        $ window_active = True
+        window show
+
+        # broom clicked counter
+        $ c_broom += 1
+
+        if touched_door == True:
+            "It’s jabbing my leg a bit, I think it’s a broom or something."
+            "It’s pressing against the door slightly, maybe I could pry the door open..."
+        else:
+            "It’s jabbing my leg a bit, I think it’s a broom or something."
+            "I'd use it to shove the door open, but I think my legs would do a far better job."
+
+        window hide
+
+        # Delay to avoid double clicks
+        $ window_active = False
+        $ renpy.pause(0.5, hard=True)
+
+        jump locker
 
     #---------------------Vent Decision Tree---------------------#
     label vent:

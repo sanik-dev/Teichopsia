@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 103: end of line expected.
-    jump lockerlabel knee:
-                     ^
+File "game/script.rpy", line 100: expected python_expression
+    elif:
+        ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Nov  3 16:59:33 2023
+Sat Nov  4 10:27:47 2023

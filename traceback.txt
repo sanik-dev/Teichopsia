@@ -1,72 +1,66 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('dark_locker.jpg') at 0x0000000005403910>:
-  File "game/script.rpy", line 55, in script
+While running game code:
+  File "game/script.rpy", line 61, in script
     $ renpy.pause()
-  File "game/script.rpy", line 55, in <module>
+  File "game/script.rpy", line 61, in <module>
     $ renpy.pause()
-OSError: Couldn't find file 'dark_locker.jpg'.
+  File "game/script.rpy", line 52, in execute
+    screen dark_locker:
+  File "game/script.rpy", line 52, in execute
+    screen dark_locker:
+  File "game/script.rpy", line 53, in execute
+    imagemap:
+  File "game/script.rpy", line 58, in execute
+    hotspot () action Jump ('broom') sensitive not window_active
+ValueError: not enough values to unpack (expected 4, got 0)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 55, in script
+  File "game/script.rpy", line 61, in script
     $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 55, in <module>
+  File "game/script.rpy", line 61, in <module>
     $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/exports.py", line 1637, in pause
     rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 299, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 3579, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 330, in get
-    surf = image.load()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 803, in load
-    raise e
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'dark_locker.jpg'.
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 476, in visit_all
+    callback(self)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 487, in per_interact
+    self.update()
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 680, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 52, in execute
+    screen dark_locker:
+  File "game/script.rpy", line 52, in execute
+    screen dark_locker:
+  File "game/script.rpy", line 53, in execute
+    imagemap:
+  File "game/script.rpy", line 58, in execute
+    hotspot () action Jump ('broom') sensitive not window_active
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 1298, in _hotspot
+    x, y, w, h = spot
+ValueError: not enough values to unpack (expected 4, got 0)
 
-Windows-10-10.0.23565 AMD64
+macOS-14.0-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Teichopsia 1.0
-Fri Nov  3 17:00:27 2023
+Sat Nov  4 10:22:57 2023
