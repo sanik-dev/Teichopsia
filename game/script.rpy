@@ -5,7 +5,10 @@ default mc_name = "Kayo"
 default window_active = False
 default c_vent = 0
 default c_knees = 0
+default c_door = 0
 
+# Initialising Switches
+default touched_door = False
 
 # Todo: Load character assets and audio you dummy :3
 label start:
@@ -50,13 +53,35 @@ label start:
             ground "dark_locker.png" 
             hotspot (731, 0, 491, 210) action Jump("vent") sensitive not window_active
             hotspot (642, 670, 646, 363) action Jump('knees') sensitive not window_active
-        
+            hotspot (618, 245, 686, 221) action Jump('door') sensitive not window_active
 
     label locker:
         show screen dark_locker
         $ renpy.pause()
         return
     
+    #---------------------Door Decision Tree---------------------#
+    label door:
+        if c_door == 0:
+            # show the dialogue box again
+            $ window_active = True
+            window show
+
+            "The door is locked, but I can't see a keyhole anywhere."
+            "I guess I'll have to find another way out."
+
+            # door clicked counter
+            $ c_door += 1
+            # door has been touched check
+            $ door_touched = True
+            window hide
+
+            # Delay to avoid double clicks
+            $ window_active = False
+            $ renpy.pause(0.5, hard=True)
+
+            jump locker 
+
     #---------------------Vent Decision Tree---------------------#
     label vent:
         # Restrict textbox to imagemap counter limit

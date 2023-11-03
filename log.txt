@@ -1,4 +1,4 @@
-Fri Nov  3 16:53:07 2023
+Fri Nov  3 17:21:14 2023
 Windows-10-10.0.23565
 Ren'Py 8.1.1.23060707
  
@@ -7,10 +7,10 @@ Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.07s
-Loading save slot metadata. took 0.01s
+Loading script. took 0.12s
+Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.02s
+Running init code. took 0.03s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
@@ -25,10 +25,10 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
 Creating interface object. took 0.13s
 Cleaning stores took 0.00s
-Init translation took 0.01s
+Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
+Analyze screens took 0.00s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.01s
@@ -47,12 +47,71 @@ Version: b'4.6.0 NVIDIA 550.09'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init. took 349.98s
+Bootstrap to the start of init.init. took 75.62s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.05s
+Loading script. took 0.06s
+Loading save slot metadata. took 0.01s
+Loading persistent. took 0.00s
+Running init code. took 0.01s
+Loading analysis data. took 0.01s
+Analyze and compile ATL. took 0.00s
+Reloading save slot metadata. took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
+Dump and make backups. took 0.02s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.13s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.02s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 550.09'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 133.07s
+Early init. took 0.00s
+Loader init. took 0.01s
+Loading error handling. took 0.01s
+Loading script. took 0.06s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
@@ -73,577 +132,6 @@ Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 330, in get
-    surf = image.load()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 803, in load
-    raise e
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'dark_locker.jpg'.
-
-While loading <renpy.display.im.Image object ('dark_locker.jpg') at 0x00000000053ba670>:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-OSError: Couldn't find file 'dark_locker.jpg'.
-Resetting cache.
-Bootstrap to the start of init.init. took 386.26s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-
-File "game/script.rpy", line 103: end of line expected.
-    jump lockerlabel knee:
-                     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start. took 0.16s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 414.97s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
-Dump and make backups. took 0.03s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.13s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 330, in get
-    surf = image.load()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 803, in load
-    raise e
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'dark_locker.jpg'.
-
-While loading <renpy.display.im.Image object ('dark_locker.jpg') at 0x000000001997f1c0>:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-OSError: Couldn't find file 'dark_locker.jpg'.
-Resetting cache.
-Bootstrap to the start of init.init. took 418.15s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.13s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 330, in get
-    surf = image.load()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 803, in load
-    raise e
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'dark_locker.jpg'.
-
-While loading <renpy.display.im.Image object ('dark_locker.jpg') at 0x0000000004bc4d00>:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-OSError: Couldn't find file 'dark_locker.jpg'.
-Resetting cache.
-Bootstrap to the start of init.init. took 437.92s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.13s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 330, in get
-    surf = image.load()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 803, in load
-    raise e
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'dark_locker.jpg'.
-
-While loading <renpy.display.im.Image object ('dark_locker.jpg') at 0x000000000538af70>:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-OSError: Couldn't find file 'dark_locker.jpg'.
-Resetting cache.
-Bootstrap to the start of init.init. took 439.51s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.13s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 330, in get
-    surf = image.load()
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 803, in load
-    raise e
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\display\im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\Nikith Kalu\Downloads\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'dark_locker.jpg'.
-
-While loading <renpy.display.im.Image object ('dark_locker.jpg') at 0x0000000005403910>:
-  File "game/script.rpy", line 55, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in <module>
-    $ renpy.pause()
-OSError: Couldn't find file 'dark_locker.jpg'.
-Resetting cache.
-Bootstrap to the start of init.init. took 459.39s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.15s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
@@ -664,11 +152,11 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init. took 461.91s
+Bootstrap to the start of init.init. took 135.81s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
-Loading script. took 0.05s
+Loading script. took 0.04s
 Loading save slot metadata. took 0.01s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
@@ -714,105 +202,8 @@ Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init. took 527.03s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.07s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
-Dump and make backups. took 0.03s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.14s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 561.91s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.13s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 597.02s
+Bootstrap to the start of init.init. took 158.82s
 Early init. took 0.00s
 Loader init. took 0.01s
 Loading error handling. took 0.01s
@@ -841,96 +232,6 @@ Save screen analysis took 0.00s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 648.41s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
-Dump and make backups. took 0.03s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.12s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.02s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 550.09'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1180, 664) drawable=(1180, 664)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init. took 910.57s
-Early init. took 0.00s
-Loader init. took 0.01s
-Loading error handling. took 0.01s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Nikith Kalu\\AppData\\Roaming/RenPy/backups\\Teichopsia':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object. took 0.14s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
 Interface start. took 0.02s
