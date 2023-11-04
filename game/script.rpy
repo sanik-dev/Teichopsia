@@ -7,6 +7,9 @@ default c_vent = 0
 default c_knees = 0
 default c_door = 0
 default c_broom = 0
+default c_books = 0
+default books_picked_up = 0
+default c_notes = 0
 
 # Initialising Switches
 default touched_door = False
@@ -56,6 +59,10 @@ label start:
             hotspot (642, 670, 646, 363) action Jump('knees') sensitive not window_active
             hotspot (618, 245, 686, 221) action Jump('door') sensitive not window_active
             hotspot (413, 123, 145, 619) action Jump ('broom') sensitive not window_active
+            hotspot (1288, 747, 336, 327) action Jump ('books') sensitive not window_active
+            hotspot (48, 8, 293, 223) action Jump ('note1') sensitive not window_active
+            hotspot (97, 276, 195, 133) action Jump ('note2') sensitive not window_active
+            hotspot (128, 499, 297, 263) action Jump ('note3') sensitive not window_active
 
     label locker:
         show screen dark_locker
@@ -86,20 +93,20 @@ label start:
 
     #---------------------Broom Decision Tree---------------------#
     label broom:
-    if c_broom < 2:
-        # show the dialogue box again
-        $ window_active = True
-        window show
+        if c_broom < 2:
+            # show the dialogue box again
+            $ window_active = True
+            window show
 
-        # broom clicked counter
-        $ c_broom += 1
+            # broom clicked counter
+            $ c_broom += 1
 
-        if touched_door == True:
-            "It’s jabbing my leg a bit, I think it’s a broom or something."
-            "It’s pressing against the door slightly, maybe I could pry the door open..."
-        else:
-            "It’s jabbing my leg a bit, I think it’s a broom or something."
-            "I'd use it to shove the door open, but I think my legs would do a far better job."
+            if touched_door == True:
+                "It’s jabbing my leg a bit, I think it’s a broom or something."
+                "It’s pressing against the door slightly, maybe I could pry the door open..."
+            else:
+                "It’s jabbing my leg a bit, I think it’s a broom or something."
+                "I'd use it to shove the door open, but I think my legs would do a far better job."
 
         window hide
 
@@ -136,23 +143,77 @@ label start:
     
     #---------------------Knees Decision Tree---------------------#
     label knees:
-    if c_knees == 0:
-        # show the dialogue box again
-        $ window_active = True
+        if c_knees == 0:
+            # show the dialogue box again
+            $ window_active = True
 
-        "No wonder my legs hurt so much."
-        "That's definitely a bruise... Probably a scrape too. I should disinfect that, huh..."
+            "No wonder my legs hurt so much."
+            "That's definitely a bruise... Probably a scrape too. I should disinfect that, huh..."
 
-        # knee clicked counter
-        $ c_knees += 1
+            # knee clicked counter
+            $ c_knees += 1
 
-        window hide
+            window hide
 
-        # Delay to avoid double clicks
-        $ window_active = False
-        $ renpy.pause(0.5, hard=True)
+            # Delay to avoid double clicks
+            $ window_active = False
+            $ renpy.pause(0.5, hard=True)
+        
+            jump locker
 
-    jump locker
+    #---------------------Books Decision Tree---------------------#
+    label books:
+        if c_books < 3:
+            # show the dialogue box again
+            $ window_active = True
+            window show
+
+            # books clicked counter
+            $ c_books += 1
+
+            if touched_door == True:
+                if c_books == 1:
+                    "It's already cramped in here, these books aren't helping at all."
+                    "The books all vary in size, maybe one could wedge the door ajar?"
+                elif c_books == 2:
+                    "I can't read any of these, but I can feel the pages are all stuck together."
+                elif c_books == 3:
+                    "I can't read any of these, but I can feel the pages are all stuck together."
+                    "I think I can make out a few words though, something about a 'chemical spill'?"
+            else:
+                "It's already cramped in here, these books aren't helping at all."
+                "This locker clearly wasn't made to fit someone my size..."
+
+            window hide
+
+            # Delay to avoid double clicks
+            $ window_active = False
+            $ renpy.pause(0.5, hard=True)
+
+            jump locker
+    #---------------------Notes Decision Tree---------------------#
+    label note1:
+        $ c_notes += 1
+        if c_notes == 1:
+            "This must be a little reminder note, I can’t read it at all."
+            "Maybe the writer will come back soon?"
+        if c_notes == 2:
+            "There sure are a lot of these, maybe the writer is the forgetful type."
+        if c_notes == 3:
+            "This one appears to have more words than the others, not like i can read it anyway"
+
+            # show the dialogue box again
+            $ window_active = True
+            window show
+
+            #notes clicked counter
+            $ c_notes += 1
+
+            
+
+
+
+    
 
 
         

@@ -1,30 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 61, in script
+  File "game/script.rpy", line 69, in script
     $ renpy.pause()
-  File "game/script.rpy", line 61, in <module>
+  File "game/script.rpy", line 69, in <module>
     $ renpy.pause()
-  File "game/script.rpy", line 52, in execute
+  File "game/script.rpy", line 55, in execute
     screen dark_locker:
-  File "game/script.rpy", line 52, in execute
+  File "game/script.rpy", line 55, in execute
     screen dark_locker:
-  File "game/script.rpy", line 53, in execute
+  File "game/script.rpy", line 56, in execute
     imagemap:
-  File "game/script.rpy", line 58, in execute
-    hotspot () action Jump ('broom') sensitive not window_active
+  File "game/script.rpy", line 63, in execute
+    hotspot () action Jump ('note1') sensitive not window_active
 ValueError: not enough values to unpack (expected 4, got 0)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 61, in script
+  File "game/script.rpy", line 69, in script
     $ renpy.pause()
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 61, in <module>
+  File "game/script.rpy", line 69, in <module>
     $ renpy.pause()
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/exports.py", line 1637, in pause
     rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
@@ -48,14 +48,14 @@ Full traceback:
     self.update()
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 680, in update
     self.screen.function(**self.scope)
-  File "game/script.rpy", line 52, in execute
+  File "game/script.rpy", line 55, in execute
     screen dark_locker:
-  File "game/script.rpy", line 52, in execute
+  File "game/script.rpy", line 55, in execute
     screen dark_locker:
-  File "game/script.rpy", line 53, in execute
+  File "game/script.rpy", line 56, in execute
     imagemap:
-  File "game/script.rpy", line 58, in execute
-    hotspot () action Jump ('broom') sensitive not window_active
+  File "game/script.rpy", line 63, in execute
+    hotspot () action Jump ('note1') sensitive not window_active
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 1298, in _hotspot
     x, y, w, h = spot
 ValueError: not enough values to unpack (expected 4, got 0)
@@ -63,4 +63,4 @@ ValueError: not enough values to unpack (expected 4, got 0)
 macOS-14.0-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Teichopsia 1.0
-Sat Nov  4 10:22:57 2023
+Sat Nov  4 14:51:51 2023
