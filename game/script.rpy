@@ -209,7 +209,7 @@ label start:
             #notes clicked counter
             $ c_notes += 1
 
-            
+
 
 
 
