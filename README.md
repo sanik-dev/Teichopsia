@@ -1,6 +1,6 @@
 # Teichopsia
 
-![A monochrome reality more vibrant than perception itself](https://imgur.com/a/NB5gJZJ)
+![A monochrome reality more vibrant than perception itself](https://imgur.com/a/NB5gJZJ "Teichopsia")
 
 In a jarring shift from the mundane, the protagonist, a young high school student, wakes up in an unfamiliar, dark space, with no recollection of how she got there or what happened prior. Instead of the comforting rituals of school and friendship, she's faced with an environment that's both eerie and inexplicable. Despite the darkness, tiny elements in her surroundings start to exhibit strange distortions. A shimmering light in the distance that keeps changing position, the echo of footsteps where there should be none, and the unsettling feeling that time itself is fractured.
 
