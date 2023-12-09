@@ -1,4 +1,4 @@
-Sat Nov  4 14:49:07 2023
+Sat Dec  9 12:42:07 2023
 macOS-14.0-arm64-arm-64bit
 Ren'Py 8.1.1.23060707
  
@@ -7,111 +7,10 @@ Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
 Loader init. took 0.00s
 Loading error handling. took 0.02s
-Loading script. took 0.13s
+Loading script. took 0.04s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
-Running init code. took 0.03s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/nikithkalu/Library/RenPy/backups/Teichopsia':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.01s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.20s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1512, 982)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1 Pro'
-Version: b'2.1 Metal - 86'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1410, 793) drawable=(2820, 1586)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 69, in script
-    $ renpy.pause()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 69, in <module>
-    $ renpy.pause()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 476, in visit_all
-    callback(self)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 487, in per_interact
-    self.update()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 680, in update
-    self.screen.function(**self.scope)
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 56, in execute
-    imagemap:
-  File "game/script.rpy", line 63, in execute
-    hotspot () action Jump ('note1') sensitive not window_active
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 1298, in _hotspot
-    x, y, w, h = spot
-ValueError: not enough values to unpack (expected 4, got 0)
-
-While running game code:
-  File "game/script.rpy", line 69, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 69, in <module>
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 56, in execute
-    imagemap:
-  File "game/script.rpy", line 63, in execute
-    hotspot () action Jump ('note1') sensitive not window_active
-ValueError: not enough values to unpack (expected 4, got 0)
-Resetting cache.
-Bootstrap to the start of init.init. took 19.33s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.02s
-Loading script. took 0.05s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.01s
+Running init code. took 0.02s
 Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
@@ -133,166 +32,7 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1512, 982)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Apple'"
-Renderer: b'Apple M1 Pro'
-Version: b'2.1 Metal - 86'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1410, 793) drawable=(2820, 1586)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 69, in script
-    $ renpy.pause()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 69, in <module>
-    $ renpy.pause()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 476, in visit_all
-    callback(self)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 487, in per_interact
-    self.update()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 680, in update
-    self.screen.function(**self.scope)
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 56, in execute
-    imagemap:
-  File "game/script.rpy", line 63, in execute
-    hotspot () action Jump ('note1') sensitive not window_active
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 1298, in _hotspot
-    x, y, w, h = spot
-ValueError: not enough values to unpack (expected 4, got 0)
-
-While running game code:
-  File "game/script.rpy", line 69, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 69, in <module>
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 56, in execute
-    imagemap:
-  File "game/script.rpy", line 63, in execute
-    hotspot () action Jump ('note1') sensitive not window_active
-ValueError: not enough values to unpack (expected 4, got 0)
-
-Full traceback:
-  File "game/script.rpy", line 69, in script
-    $ renpy.pause()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 69, in <module>
-    $ renpy.pause()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 476, in visit_all
-    callback(self)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 487, in per_interact
-    self.update()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 680, in update
-    self.screen.function(**self.scope)
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 56, in execute
-    imagemap:
-  File "game/script.rpy", line 63, in execute
-    hotspot () action Jump ('note1') sensitive not window_active
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 1298, in _hotspot
-    x, y, w, h = spot
-ValueError: not enough values to unpack (expected 4, got 0)
-
-While running game code:
-  File "game/script.rpy", line 69, in script
-    $ renpy.pause()
-  File "game/script.rpy", line 69, in <module>
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 56, in execute
-    imagemap:
-  File "game/script.rpy", line 63, in execute
-    hotspot () action Jump ('note1') sensitive not window_active
-ValueError: not enough values to unpack (expected 4, got 0)
-Resetting cache.
-Bootstrap to the start of init.init. took 166.22s
-Early init. took 0.00s
-Loader init. took 0.00s
-Loading error handling. took 0.02s
-Loading script. took 0.06s
-Loading save slot metadata. took 0.01s
-Loading persistent. took 0.00s
-Running init code. took 0.02s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
-Index archives took 0.00s
-Backing up script files to '/Users/nikithkalu/Library/RenPy/backups/Teichopsia':
-Dump and make backups. took 0.02s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.00s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.04s
+Interface start. took 0.34s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1512, 982)
@@ -308,13 +48,6 @@ Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
 Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s

@@ -191,22 +191,23 @@ label start:
             $ renpy.pause(0.5, hard=True)
 
             jump locker
+            
     #---------------------Notes Decision Tree---------------------#
     label note1:
-        $ c_notes += 1
-        if c_notes == 1:
-            "This must be a little reminder note, I can’t read it at all."
-            "Maybe the writer will come back soon?"
-        if c_notes == 2:
-            "There sure are a lot of these, maybe the writer is the forgetful type."
-        if c_notes == 3:
-            "This one appears to have more words than the others, not like i can read it anyway"
+        if c_notes < 4:
+            if c_notes == 0:
+                "This must be a little reminder note, I can’t read it at all."
+                "Maybe the writer will come back soon?"
+            if c_notes == 1:
+                "There sure are a lot of these, maybe the writer is the forgetful type."
+            if c_notes == 2:
+                "This one appears to have more words than the others, not like i can read it anyway"
 
             # show the dialogue box again
             $ window_active = True
             window show
 
-            #notes clicked counter
+            # notes clicked counter
             $ c_notes += 1
 
 
