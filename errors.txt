@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 73: elif clause expects a non-empty block.
-    elif c_vent > 2:
-                    ^
+File "game/script.rpy", line 63: hotspot statement expects 1 positional arguments, got 0.
+    hotspot
+           ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Nov  3 00:06:00 2023
+Sat Nov  4 14:47:09 2023
