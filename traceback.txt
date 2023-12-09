@@ -3,64 +3,26 @@
 While running game code:
   File "game/script.rpy", line 69, in script
     $ renpy.pause()
-  File "game/script.rpy", line 69, in <module>
-    $ renpy.pause()
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 56, in execute
-    imagemap:
-  File "game/script.rpy", line 63, in execute
-    hotspot () action Jump ('note1') sensitive not window_active
-ValueError: not enough values to unpack (expected 4, got 0)
+ScriptError: could not find label 'note2'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/bootstrap.py", line 275, in bootstrap
+    renpy.main.main()
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/main.py", line 670, in main
+    run(restart)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/main.py", line 144, in run
+    renpy.execution.run_context(True)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/execution.py", line 953, in run_context
+    context.run()
   File "game/script.rpy", line 69, in script
     $ renpy.pause()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 1138, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/python.py", line 1122, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 69, in <module>
-    $ renpy.pause()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/exports.py", line 1637, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 681, in visit_all
-    d.visit_all(callback, seen)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 476, in visit_all
-    callback(self)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/core.py", line 4052, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 487, in per_interact
-    self.update()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/display/screen.py", line 680, in update
-    self.screen.function(**self.scope)
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 55, in execute
-    screen dark_locker:
-  File "game/script.rpy", line 56, in execute
-    imagemap:
-  File "game/script.rpy", line 63, in execute
-    hotspot () action Jump ('note1') sensitive not window_active
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ui.py", line 1298, in _hotspot
-    x, y, w, h = spot
-ValueError: not enough values to unpack (expected 4, got 0)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'note2'.
 
 macOS-14.0-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Teichopsia 1.0
-Sat Nov  4 14:51:51 2023
+Sat Dec  9 12:50:05 2023
