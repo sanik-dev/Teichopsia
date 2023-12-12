@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 63: hotspot statement expects 1 positional arguments, got 0.
-    hotspot
-           ^
+File "game/script.rpy", line 212: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "I decided to take the note with me."
+    ^
+
+File "game/script.rpy", line 215: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "I think I'll leave the note where it is."
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sat Nov  4 14:47:09 2023
+Tue Dec 12 13:40:53 2023

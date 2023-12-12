@@ -205,9 +205,19 @@ label start:
             if c_notes == 1:
                 "This must be a little reminder note, I can’t read it at all."
                 "Maybe the writer will come back soon?"
-            if c_notes == 2:
+
+                menu:
+                    "What should I do with the note?":
+                        "Take it"
+                            "I decided to take the note with me."
+                            # Add additional actions here if needed
+                        "Leave it"
+                            "I think I'll leave the note where it is."
+                            # Add additional actions here if needed
+
+            elif c_notes == 2:
                 "There sure are a lot of these, maybe the writer is the forgetful type."
-            if c_notes == 3:
+            elif c_notes == 3:
                 "This one appears to have more words than the others, not like i can read it anyway"
 
             window hide
@@ -225,7 +235,7 @@ label start:
 
             # Delay to avoid double clicks
             $ window_active = False
-            $ renpy.pause(0.5, hard=True)
+            $ renpy.pause(0.5, hard=True) 
 
 
 
