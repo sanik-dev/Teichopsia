@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"fdb930f3cc064420","type":"text","text":"### Maybe I should find a way out of here first","x":420,"y":120,"width":329,"height":80},
+		{"id":"e5714aa335e300e6","type":"text","text":"No wonder my legs hurt so much. # That's definitely a bruise... Probably a scrape too. I should disinfect that, huh...","x":-40,"y":-220,"width":260,"height":160},
+		{"id":"e8de5f89e98ab3c6","type":"text","text":"Is [Touch Door] true?","x":475,"y":-245,"width":220,"height":50}
+	],
+	"edges":[
+		{"id":"f9f68884456f98b8","fromNode":"fdb930f3cc064420","fromSide":"top","toNode":"e5714aa335e300e6","toSide":"bottom","label":"[Touch Knees]"},
+		{"id":"98a8c0b1863934a8","fromNode":"e8de5f89e98ab3c6","fromSide":"bottom","toNode":"fdb930f3cc064420","toSide":"top","label":"[Touch Broom]"}
+	]
+}

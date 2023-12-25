@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "a2d17bb4b5a3e1a0",
+        "id": "8a162b3ecca896b9",
         "type": "tabs",
         "children": [
           {
-            "id": "5c12444434e79e29",
+            "id": "6de245b9939a4447",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
+            }
+          },
+          {
+            "id": "76ff11561b2bde35",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "14_Index/Table of Contents.md",
+                "file": "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "5444ffe7759e817a",
@@ -85,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "14_Index/Table of Contents.md",
+                "file": "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "14_Index/Table of Contents.md",
+                "file": "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "14_Index/Table of Contents.md"
+                "file": "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md"
               }
             }
           }
@@ -150,23 +160,30 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "5c12444434e79e29",
+  "active": "76ff11561b2bde35",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md",
+    "03_StoryBranching/Main Progression.md",
+    "02_Characters/MainCharacters/Minori.md",
     "02_Characters/MainCharacters/Azusa.md",
-    "14_Index/Table of Contents.md",
     "01_Concept/VN Concept.md",
     "00_Home/Project Overview.md",
+    "00_Home/Dashboard.md",
+    "03_StoryBranching/Decision Tree/Locker Decision Tree.canvas",
+    "08_DevelopmentNotes/Planning/Basement",
+    "08_DevelopmentNotes/Planning/Basement.md",
+    "07_GameMechanics/Imagemaps.md",
+    "14_Index/Table of Contents.md",
+    "Untitled.md",
     "02_CharacterDevelopment/SupportingCharacters.md",
     "02_CharacterDevelopment",
-    "00_Home/Dashboard.md",
     "01_ConceptAndSetting/NarrativeStructure.md",
     "01_ConceptAndSetting",
     "00_Home/Project_Overview.md",
     "00_Home/Project.md",
-    "Untitled.canvas",
     "09_Testing/Bug Reports.md",
     "08_DevelopmentNotes/Planning/Plot.md",
-    "07_GameMechanics/Imagemaps.md",
     "06_AudioElements/BGM",
     "06_AudioElements/UI",
     "06_AudioElements/SFX",
@@ -176,18 +193,11 @@
     "05_VisualElements/CG Art",
     "05_VisualElements/Character Sprites",
     "08_DevelopmentNotes/Planning/Story 1.md",
-    "08_DevelopmentNotes/Planning/Basement.md",
     "02_Characters/MainCharacters/Player.md",
-    "03_StoryBranching/Main Progression.md",
     "08_DevelopmentNotes/Planning",
     "08_DevelopmentNotes/Planning.md",
-    "05_VisualElements/BG Art",
     "04_Scripts/Untitled.md",
     "02_Characters/SupportingCharacters/Professor Hakase.md",
-    "02_Characters/MainCharacters/Takane.md",
-    "02_Characters/MainCharacters/Minori.md",
-    "02_Characters/MainCharacters/Rie.md",
-    "02_Characters/Untitled.md",
-    "00_Home.md"
+    "02_Characters/MainCharacters/Takane.md"
   ]
 }

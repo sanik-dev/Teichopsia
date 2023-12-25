@@ -6,17 +6,19 @@
 ## Concept and Setting
 - [VN Concept](01_Concept/VN%20Concept.md)
 ## Character Development
-- [Main Characters](02_Characters/MainCharacters/)
+- Main Characters
 	- [Azusa](02_Characters/MainCharacters/Azusa)
 	- [Minori](02_Characters/MainCharacters/Minori)
 	- [Player](02_Characters/MainCharacters/Player)
 	- [Rie](02_Characters/MainCharacters/Rie)
 	- [Takane](02_Characters/MainCharacters/Takane)
-- [Supporting Characters](02_Characters/SupportingCharacters/)
+- Supporting Characters
 	- [Professor Hakase](02_Characters/SupportingCharacters/Professor%20Hakase)
 
 ## Story Branching
-- [Main Storyline](03_StoryBranching/MainStoryline.md)
+- Decision Tree
+	- ![[Locker Decision Tree.canvas]]
+	- 
 
 ## Script and Dialogues
 - [Chapter 1](04_ScriptAndDialogues/Chapter_01/)
