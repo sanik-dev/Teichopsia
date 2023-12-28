@@ -209,14 +209,33 @@ label start:
 
                     "Take it":
                         "I decided to take the note with me."
-                        # Add additional actions here if needed
+                        # Add note1 to inventory or note1 = True
                     "Leave it":
-                        "I think I'll leave the note where it is."
-                        # Add additional actions here if needed
+                        "Better not mess with fate"
+
             elif c_notes == 2:
                 "There sure are a lot of these, maybe the writer is the forgetful type."
+
+                menu:
+                    "What should i do with this note?"
+
+                    "Take it":
+                        "I decided to take the note with me."
+                        # Add note2 to inventory or note2 = True
+                    "Leave it":
+                        "Better not mess with fate"
+
             elif c_notes == 3:
                 "This one appears to have more words than the others, not like i can read it anyway"
+
+                menu:
+                    "What about this one?"
+
+                    "Take it":
+                        "I decided to take the note with me."
+                        # Add note3 to inventory or note3 = True
+                    "Leave it":
+                        "Better not mess with fate"
 
             window hide
 
