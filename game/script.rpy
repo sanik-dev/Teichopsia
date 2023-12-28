@@ -60,10 +60,8 @@ label start:
             hotspot (618, 245, 686, 221) action Jump('door') sensitive not window_active
             hotspot (413, 123, 145, 619) action Jump ('broom') sensitive not window_active
             hotspot (1288, 747, 336, 327) action Jump ('books') sensitive not window_active
-            hotspot (48, 8, 293, 223) action Jump ('note1') sensitive not window_active
-            hotspot (97, 276, 195, 133) action Jump ('note2') sensitive not window_active
-            hotspot (128, 499, 297, 263) action Jump ('note3') sensitive not window_active
-
+            hotspot (32, 12, 382, 799) action Jump ('notes') sensitive not window_active
+            
     label locker:
         show screen dark_locker
         $ renpy.pause()
@@ -193,7 +191,7 @@ label start:
             jump locker
 
     #---------------------Notes Decision Tree---------------------#
-    label note1:
+    label notes:
         if c_notes < 4:
             # show the dialogue box again
             $ window_active = True
@@ -207,14 +205,14 @@ label start:
                 "Maybe the writer will come back soon?"
 
                 menu:
-                    "What should I do with the note?":
-                        "Take it"
-                            "I decided to take the note with me."
-                            # Add additional actions here if needed
-                        "Leave it"
-                            "I think I'll leave the note where it is."
-                            # Add additional actions here if needed
+                    "What should I do with the note?"
 
+                    "Take it":
+                        "I decided to take the note with me."
+                        # Add additional actions here if needed
+                    "Leave it":
+                        "I think I'll leave the note where it is."
+                        # Add additional actions here if needed
             elif c_notes == 2:
                 "There sure are a lot of these, maybe the writer is the forgetful type."
             elif c_notes == 3:

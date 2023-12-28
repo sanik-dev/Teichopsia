@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 212: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "I decided to take the note with me."
-    ^
-
-File "game/script.rpy", line 215: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "I think I'll leave the note where it is."
-    ^
+File "game/script.rpy", line 210: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "What should I do with the note?"
+                                     ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Tue Dec 12 13:40:53 2023
+Thu Dec 28 12:35:17 2023

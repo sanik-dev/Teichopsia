@@ -22,7 +22,7 @@ Full traceback:
     raise ScriptError("could not find label '%s'." % str(original))
 ScriptError: could not find label 'note2'.
 
-macOS-14.0-arm64-arm-64bit arm64
+macOS-14.3-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Teichopsia 1.0
-Sat Dec  9 12:50:05 2023
+Thu Dec 28 12:42:23 2023
