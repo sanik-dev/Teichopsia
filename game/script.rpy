@@ -102,6 +102,14 @@ label start:
             if touched_door == True:
                 "It’s jabbing my leg a bit, I think it’s a broom or something."
                 "It’s pressing against the door slightly, maybe I could pry the door open..."
+                menu:
+                    "Should i try to open it with the broom?"
+
+                    "Yes":
+                        "I wedge the length of the broom into the gap and pull with all of my remaining strength."
+                        "The door creaks open, and I can see a sliver of light from the outside."
+                    "No":
+                        "Maybe i'll try something else."
             else:
                 "It’s jabbing my leg a bit, I think it’s a broom or something."
                 "I'd use it to shove the door open, but I think my legs would do a far better job."
