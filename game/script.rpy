@@ -88,31 +88,103 @@ label start:
             $ renpy.pause(0.5, hard=True)
 
             jump locker
-
+        else:
+            jump locker
     #---------------------Broom Decision Tree---------------------#
     label broom:
-        if c_broom < 2:
-            # show the dialogue box again
-            $ window_active = True
-            window show
+    if c_broom < 2:
+        # Show the dialogue box again
+        $ window_active = True
+        window show
 
-            # broom clicked counter
-            $ c_broom += 1
+        # Broom clicked counter
+        $ c_broom += 1
 
-            if touched_door == True:
-                "It’s jabbing my leg a bit, I think it’s a broom or something."
-                "It’s pressing against the door slightly, maybe I could pry the door open..."
-                menu:
-                    "Should i try to open it with the broom?"
+        "It’s jabbing my leg a bit, I think it’s a broom or something."
 
-                    "Yes":
-                        "I wedge the length of the broom into the gap and pull with all of my remaining strength."
-                        "The door creaks open, and I can see a sliver of light from the outside."
-                    "No":
-                        "Maybe i'll try something else."
-            else:
-                "It’s jabbing my leg a bit, I think it’s a broom or something."
-                "I'd use it to shove the door open, but I think my legs would do a far better job."
+        if touched_door:
+            "It’s pressing against the door slightly, maybe I could pry the door open..."
+            menu:
+                "Should I try to open it with the broom?"
+
+                "Yes":
+                    "I wedge the length of the broom into the gap and pull with all of my remaining strength."
+                    "The door creaks open, and I can see a sliver of light from the outside."
+                "No":
+                    "Maybe I'll try something else."
+        else:
+            "I'd use it to shove the door open, but I think my legs would do a far better job."
+
+        window hide
+
+        # Delay to avoid double clicks
+        $ window_active = False
+        $ renpy.pause(0.5, hard=True)
+
+    jump locker
+
+
+    #---------------------Vent Decision Tree---------------------#
+    label vent:
+    # Restrict textbox to imagemap counter limit
+    if c_vent < 2:
+        # Vent clicked counter
+        $ c_vent += 1
+
+        # Show the dialogue box
+        $ window_active = True
+        window show
+
+        if c_vent == 1:
+            "There are three long thin holes, but it's too dark outside to see anything."
+        elif c_vent == 2:
+            "I might not be able to see anything, but I can certainly smell a concerning amount of chemicals in the air."
+            "If it's this strong inside this locker, what is it even like outside?"
+
+        window hide
+
+        # Delay to avoid double clicks
+        $ window_active = False
+        $ renpy.pause(0.5, hard=True)
+
+    jump locker
+
+    
+    #---------------------Knees Decision Tree---------------------#
+    label knees:
+        "No wonder my legs hurt so much."
+        "That's definitely a bruise... Probably a scrape too. I should disinfect that, huh..."
+
+        # Knee clicked counter
+        $ c_knees += 1
+
+        # Delay to avoid double clicks
+        $ renpy.pause(0.5, hard=True)
+
+        jump locker
+
+    #---------------------Books Decision Tree---------------------#
+    label books:
+    if c_books < 3:
+        # Books clicked counter
+        $ c_books += 1
+
+        # Show the dialogue box
+        $ window_active = True
+        window show
+
+        "It's already cramped in here, these books aren't helping at all."
+
+        if touched_door:
+            if c_books == 1:
+                "The books all vary in size, maybe one could wedge the door ajar?"
+            elif c_books == 2:
+                "I can't read any of these, but I can feel the pages are all stuck together."
+            else:  # This implies c_books == 3
+                "I can't read any of these, but I can feel the pages are all stuck together."
+                "I think I can make out a few words though, something about a 'chemical spill'?"
+        else:
+            "This locker clearly wasn't made to fit someone my size..."
 
         window hide
 
@@ -121,82 +193,6 @@ label start:
         $ renpy.pause(0.5, hard=True)
 
         jump locker
-
-    #---------------------Vent Decision Tree---------------------#
-    label vent:
-        # Restrict textbox to imagemap counter limit
-        if c_vent < 2:
-            # show the dialogue box again
-            $ window_active = True
-            window show
-
-            # vent clicked counter
-            $ c_vent += 1
-
-            if c_vent == 1:
-                "There are three long thin holes, but its too dark outside to see anything."
-            elif c_vent == 2:
-                "I might not be able to see anything, but I can certainly smell a concerning amount of chemicals in the air."
-                "If its this strong inside this locker what is it even like outside?"
-
-            window hide
-
-            # Delay to avoid double clicks
-            $ window_active = False
-            $ renpy.pause(0.5, hard=True)
-
-            jump locker
-    
-    #---------------------Knees Decision Tree---------------------#
-    label knees:
-        if c_knees == 0:
-            # show the dialogue box again
-            $ window_active = True
-
-            "No wonder my legs hurt so much."
-            "That's definitely a bruise... Probably a scrape too. I should disinfect that, huh..."
-
-            # knee clicked counter
-            $ c_knees += 1
-
-            window hide
-
-            # Delay to avoid double clicks
-            $ window_active = False
-            $ renpy.pause(0.5, hard=True)
-        
-            jump locker
-
-    #---------------------Books Decision Tree---------------------#
-    label books:
-        if c_books < 3:
-            # show the dialogue box again
-            $ window_active = True
-            window show
-
-            # books clicked counter
-            $ c_books += 1
-
-            if touched_door == True:
-                if c_books == 1:
-                    "It's already cramped in here, these books aren't helping at all."
-                    "The books all vary in size, maybe one could wedge the door ajar?"
-                elif c_books == 2:
-                    "I can't read any of these, but I can feel the pages are all stuck together."
-                elif c_books == 3:
-                    "I can't read any of these, but I can feel the pages are all stuck together."
-                    "I think I can make out a few words though, something about a 'chemical spill'?"
-            else:
-                "It's already cramped in here, these books aren't helping at all."
-                "This locker clearly wasn't made to fit someone my size..."
-
-            window hide
-
-            # Delay to avoid double clicks
-            $ window_active = False
-            $ renpy.pause(0.5, hard=True)
-
-            jump locker
 
     #---------------------Notes Decision Tree---------------------#
     label notes:

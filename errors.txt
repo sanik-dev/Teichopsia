@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 210: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "What should I do with the note?"
-                                     ^
+File "game/script.rpy", line 106: expected statement.
+    "Yes":
+         ^
+
+File "game/script.rpy", line 109: expected statement.
+    "No":
+        ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Dec 28 12:35:17 2023
+Wed Jan 10 11:22:34 2024
