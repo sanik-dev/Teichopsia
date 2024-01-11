@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 69, in script
-    $ renpy.pause()
-ScriptError: could not find label 'note2'.
+  File "game/script.rpy", line 17, in script
+    jump locker
+ScriptError: could not find label 'locker'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/bootstrap.py", line 275, in bootstrap
-    renpy.main.main()
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/main.py", line 670, in main
-    run(restart)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/main.py", line 144, in run
-    renpy.execution.run_context(True)
-  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/execution.py", line 953, in run_context
-    context.run()
-  File "game/script.rpy", line 69, in script
-    $ renpy.pause()
+  File "game/script.rpy", line 17, in script
+    jump locker
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 1992, in execute
+    rv = renpy.game.script.lookup(target)
   File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/script.py", line 1013, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'note2'.
+ScriptError: could not find label 'locker'.
 
 macOS-14.3-arm64-arm-64bit arm64
 Ren'Py 8.1.1.23060707
 Teichopsia 1.0
-Thu Dec 28 12:42:23 2023
+Thu Jan 11 13:38:16 2024

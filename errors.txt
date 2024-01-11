@@ -2,13 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 106: expected statement.
-    "Yes":
-         ^
-
-File "game/script.rpy", line 109: expected statement.
-    "No":
-        ^
+File "game/prologue.rpy", line 1: Unexpected indentation at start of file.
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Wed Jan 10 11:22:34 2024
+Thu Jan 11 13:35:15 2024

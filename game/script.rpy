@@ -14,19 +14,15 @@ default touched_door = False
 label start:
     #------------------------------Prologue------------------------------#
     call prologue
-    # Setup
-    $ Kayo = Character(mc_name, color="#c8ffc8")
-    # [Other setup code]
     jump locker
-
 #------------------------------Locker Escape Scene------------------------------# 
 
-call locker_escape
+# call locker_escape
 
 # Decision Trees
-call door_decision
-call broom_decision
-call vent_decision
-call knees_decision
-call books_decision
-call notes_decision
+# call door_decision
+# call broom_decision
+# call vent_decision
+# call knees_decision
+# call books_decision
+# call notes_decision

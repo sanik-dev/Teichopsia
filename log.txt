@@ -1,13 +1,13 @@
-Thu Jan 11 13:16:34 2024
+Thu Jan 11 13:38:05 2024
 macOS-14.3-arm64-arm-64bit
 Ren'Py 8.1.1.23060707
  
 
 Bootstrap to the start of init.init. took 0.02s
 Early init. took 0.00s
-Loader init. took 0.01s
+Loader init. took 0.00s
 Loading error handling. took 0.02s
-Loading script. took 0.06s
+Loading script. took 0.09s
 Loading save slot metadata. took 0.02s
 Loading persistent. took 0.00s
 Running init code. took 0.02s
@@ -15,7 +15,8 @@ Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
 Reloading save slot metadata. took 0.01s
 Index archives took 0.00s
-Dump and make backups. took 0.02s
+Backing up script files to '/Users/nikithkalu/Library/RenPy/backups/Teichopsia':
+Dump and make backups. took 0.03s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.01s
@@ -24,15 +25,15 @@ Creating interface object. took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.00s
 Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Save screen analysis took 0.01s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.23s
+Interface start. took 0.21s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1512, 982)
@@ -44,3 +45,17 @@ Version: b'2.1 Metal - 88'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1410, 793) drawable=(2820, 1586)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 17, in script
+    jump locker
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/ast.py", line 1992, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Users/nikithkalu/Downloads/renpy-8.1.1-sdk/renpy/script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'locker'.
+
+While running game code:
+  File "game/script.rpy", line 17, in script
+    jump locker
+ScriptError: could not find label 'locker'.
