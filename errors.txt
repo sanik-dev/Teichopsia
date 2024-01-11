@@ -1,8 +1,0 @@
-﻿I'm sorry, but errors were detected in your script. Please correct the
-errors listed below, and try again.
-
-
-File "game/prologue.rpy", line 1: Unexpected indentation at start of file.
-
-Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Jan 11 13:35:15 2024

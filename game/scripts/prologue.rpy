@@ -23,4 +23,4 @@ label prologue:
     "Maybe I should find a way out of here first."
 
     window hide
-    return  # Use return instead of jump locker
+    return  # End of prologue
