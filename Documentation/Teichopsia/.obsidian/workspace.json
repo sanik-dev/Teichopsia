@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md",
+                "file": "08_DevelopmentNotes/Planning/Basement/Basement Escape.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "right": {
     "id": "5444ffe7759e817a",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md",
+                "file": "08_DevelopmentNotes/Planning/Basement/Basement Escape.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md",
+                "file": "08_DevelopmentNotes/Planning/Basement/Basement Escape.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md"
+                "file": "08_DevelopmentNotes/Planning/Basement/Basement Escape.md"
               }
             }
           }
@@ -162,6 +161,8 @@
   },
   "active": "76ff11561b2bde35",
   "lastOpenFiles": [
+    "08_DevelopmentNotes/Planning/Plot.md",
+    "08_DevelopmentNotes/Planning/Basement/Basement Escape.md",
     "Untitled.canvas",
     "08_DevelopmentNotes/Planning/Basement/Locker Decision Tree.md",
     "03_StoryBranching/Main Progression.md",
@@ -183,7 +184,6 @@
     "00_Home/Project_Overview.md",
     "00_Home/Project.md",
     "09_Testing/Bug Reports.md",
-    "08_DevelopmentNotes/Planning/Plot.md",
     "06_AudioElements/BGM",
     "06_AudioElements/UI",
     "06_AudioElements/SFX",
